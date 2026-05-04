@@ -7,7 +7,8 @@ export const metadata: Metadata = {
     default: 'Moyer Management | Coming Soon',
     template: '%s | Moyer Management',
   },
-  description: 'A professional home for management systems, operations thinking, and practical consulting resources.',
+  description:
+    'A professional home for management systems, operations thinking, and practical consulting resources.',
   robots: {
     index: true,
     follow: true,
@@ -20,12 +21,14 @@ export const metadata: Metadata = {
     url: 'https://moyermanagement.com/',
     siteName: 'Moyer Management',
     title: 'Moyer Management | Coming Soon',
-    description: 'A professional home for management systems, operations thinking, and practical consulting resources.',
+    description:
+      'A professional home for management systems, operations thinking, and practical consulting resources.',
   },
   twitter: {
     card: 'summary',
     title: 'Moyer Management | Coming Soon',
-    description: 'A professional home for management systems, operations thinking, and practical consulting resources.',
+    description:
+      'A professional home for management systems, operations thinking, and practical consulting resources.',
   },
 }
 
