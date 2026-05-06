@@ -33,33 +33,32 @@ export default function Home() {
           </p>
         </div>
         <div className="accordion-list">
-          {' '}
           <details className="accordion">
             <summary>Property Management</summary>
             <p>
-              Property Management support for Moyermanagement clients, migrated from the live
-              WordPress content into a static Next.js experience.
+              Organized property oversight, documentation, and practical management support tailored
+              to each owner and asset.
             </p>
           </details>
           <details className="accordion">
             <summary>Coin Collection Management</summary>
             <p>
-              Coin Collection Management support for Moyermanagement clients, migrated from the live
-              WordPress content into a static Next.js experience.
+              Cataloging, tracking, and stewardship support for coin collections and other
+              specialized holdings.
             </p>
           </details>
           <details className="accordion">
             <summary>Physical Investments</summary>
             <p>
-              Physical Investments support for Moyermanagement clients, migrated from the live
-              WordPress content into a static Next.js experience.
+              Clear management practices for tangible assets, risk reduction, and long-term value
+              protection.
             </p>
           </details>
           <details className="accordion">
-            <summary>Digital Assests</summary>
+            <summary>Digital Assets</summary>
             <p>
-              Digital Assests support for Moyermanagement clients, migrated from the live WordPress
-              content into a static Next.js experience.
+              Practical digital asset organization so records, accounts, and online holdings stay
+              understandable and protected.
             </p>
           </details>
         </div>
@@ -67,36 +66,36 @@ export default function Home() {
       <section id="process" className="section">
         <h2>Our Process</h2>
         <div className="mini-grid">
-          {' '}
           <article className="mini-card">
             <h3>Identify</h3>
             <p>
-              Identify is preserved as a visible content area from the original WordPress homepage.
+              Clarify the assets, responsibilities, risks, and goals that need management attention.
             </p>
           </article>
           <article className="mini-card">
             <h3>Assess</h3>
             <p>
-              Assess is preserved as a visible content area from the original WordPress homepage.
+              Review the current state, identify gaps, and prioritize the most important
+              improvements.
             </p>
           </article>
           <article className="mini-card">
             <h3>Improve</h3>
             <p>
-              Improve is preserved as a visible content area from the original WordPress homepage.
+              Implement practical management steps, documentation, and repeatable operating habits.
             </p>
           </article>
           <article className="mini-card">
             <h3>Repeat</h3>
             <p>
-              Repeat is preserved as a visible content area from the original WordPress homepage.
+              Revisit the plan regularly so the management approach stays current as needs change.
             </p>
           </article>
         </div>
       </section>
       <section className="blue-band">
         <div>
-          <h2>Rest Assured, You &amp; Your Company is Covered</h2>
+          <h2>Rest Assured, You &amp; Your Company Are Covered</h2>
           <p>
             Moyer Management brings a practical identify, assess, improve, and repeat cycle to every
             engagement.
