@@ -28,38 +28,43 @@ export default function Home() {
         <div>
           <h2>Specialized Management Consultation</h2>
           <p>
-            Focused management support for properties, collections, physical investments, and
-            digital assets.
+            Welcome to Moyer Management, where we offer specialized management solutions tailored to
+            your specific needs. Whether you need assistance with property management, coin
+            collection management,, physical investments, or digital assets we’ve got you covered.
+            Our dedicated team provides expert advice and guidance to ensure the efficient
+            management and maximization of your assets. With our proven process of Identify, Assess,
+            Improve, and Repeat, you can trust that you or your company are in capable hands. Choose
+            Moyer Management for cost reduction, revenue increase, and clear management objectives.
+            Our values center around always doing the right thing, so you can rely on us to make the
+            best decisions for your business. Don’t hesitate, start now with a free consultation.
+            Help for all your management issues is just a click away.
+          </p>
+          <p>
+            At Moyer Management, we specialize in managing a wide range of physical assets,
+            including land, trees, crops, and tangible commodities. With our expertise and
+            dedication, we offer tailored management solutions that are designed to meet your
+            specific needs. Our team of professionals is committed to providing expert advice and
+            guidance, ensuring that your assets are well-managed and maximized for success. Don’t
+            hesitate, get started today by scheduling a free consultation. Help with all your
+            management issues is just a click away.
           </p>
         </div>
         <div className="accordion-list">
           <details className="accordion">
             <summary>Property Management</summary>
-            <p>
-              Organized property oversight, documentation, and practical management support tailored
-              to each owner and asset.
-            </p>
+            <p>Management support tailored to each owner and asset.</p>
           </details>
           <details className="accordion">
             <summary>Coin Collection Management</summary>
-            <p>
-              Cataloging, tracking, and stewardship support for coin collections and other
-              specialized holdings.
-            </p>
+            <p>Cataloging, tracking, and stewardship support for coin collections.</p>
           </details>
           <details className="accordion">
             <summary>Physical Investments</summary>
-            <p>
-              Clear management practices for tangible assets, risk reduction, and long-term value
-              protection.
-            </p>
+            <p>Clear management practices for tangible assets and long-term value protection.</p>
           </details>
           <details className="accordion">
-            <summary>Digital Assets</summary>
-            <p>
-              Practical digital asset organization so records, accounts, and online holdings stay
-              understandable and protected.
-            </p>
+            <summary>Digital Assests</summary>
+            <p>Practical organization for digital records, accounts, and online holdings.</p>
           </details>
         </div>
       </section>
@@ -69,36 +74,58 @@ export default function Home() {
           <article className="mini-card">
             <h3>Identify</h3>
             <p>
-              Clarify the assets, responsibilities, risks, and goals that need management attention.
+              Moyer Management – Your reliable ally in asset identification. Discover assets and
+              asset types relevant to your goals with ease and efficiency.
             </p>
           </article>
           <article className="mini-card">
             <h3>Assess</h3>
             <p>
-              Review the current state, identify gaps, and prioritize the most important
-              improvements.
+              Assess your current mix of assets and identify any gaps with Moyer Management.
+              Discover the full potential of your assets with our expert guidance and strategic
+              approach. Our team at Moyer Management is here to help you make informed decisions,
+              optimize your resources, and maximize your overall performance. With our specialized
+              expertise, we can ensure that your assets are aligned with your goals, enabling you to
+              stay ahead in today’s dynamic market.
             </p>
           </article>
           <article className="mini-card">
             <h3>Improve</h3>
             <p>
-              Implement practical management steps, documentation, and repeatable operating habits.
+              Based on the assessment, Moyer Management aims to enhance the overall asset holding
+              and ensure a harmonious distribution in line with your goals. Our expertise lies in
+              improving your financial portfolio, optimizing resource allocation, and aligning
+              management percentages to support your specific objectives. Trust us to guide you
+              towards a well-balanced and prosperous future.
             </p>
           </article>
           <article className="mini-card">
             <h3>Repeat</h3>
             <p>
-              Revisit the plan regularly so the management approach stays current as needs change.
+              Never cease to enhance your positions and refine your management approach. At Moyer
+              Management, we wholeheartedly believe in the power of continuous learning and constant
+              improvements. We are committed to supporting your journey towards growth and success,
+              prioritizing the development of your skills and leadership abilities.
             </p>
           </article>
         </div>
       </section>
       <section className="blue-band">
         <div>
-          <h2>Rest Assured, You &amp; Your Company Are Covered</h2>
+          <h2>Rest Assured, You &amp; Your Company is Covered</h2>
           <p>
-            Moyer Management brings a practical identify, assess, improve, and repeat cycle to every
-            engagement.
+            Reduce Your Organization’s Risk with Moyer Management – Your Trusted Partner. Rest
+            Assured, Your Company is Covered. At Moyer Management, we prioritize the importance of
+            risk mitigation for organizations like yours. Our specialized management solutions are
+            crafted to minimize potential risks and ensure seamless operations. With our proven
+            process of Identify, Assess, Improve, and Repeat, entrusting your assets to our capable
+            hands is a decision you can rely on. Our dedicated team of skilled professionals closely
+            collaborates with you to identify and assess potential risks, empowering you to make
+            informed decisions and proactively safeguard your organization. Choose Moyer Management
+            for peace of mind, cost reduction, revenue growth, and clear management objectives. Your
+            business deserves the best, so schedule a free consultation today and let us guide you
+            through the intricate world of risk management. Help for all your management issues is
+            only a click away.
           </p>
           <a className="button light" href="#contact">
             Get Started
@@ -108,20 +135,15 @@ export default function Home() {
       <section className="section mission">
         <article>
           <h3>Mission</h3>
-          <p>
-            Provide specific, practical management solutions for clients who need organized support.
-          </p>
+          <p>Reduce Cost — Increase Revenue</p>
         </article>
         <article>
           <h3>Vision</h3>
-          <p>
-            Help individuals and organizations make confident decisions about their assets and
-            operations.
-          </p>
+          <p>A simple set of management objectives.</p>
         </article>
         <article>
           <h3>Values</h3>
-          <p>Clarity, stewardship, trust, and repeatable improvement.</p>
+          <p>Allways be caught doing the right thing.</p>
         </article>
       </section>
       <section id="contact" className="contact">
