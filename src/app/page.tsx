@@ -1,43 +1,136 @@
-const upcoming = [
-  'A focused coming-soon landing page',
-  'Portfolio-level ownership and GitHub Pages deployment',
-  'A content plan that can grow into the full site when ready',
-]
-
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
-      <section className="mx-auto flex min-h-screen w-full max-w-5xl flex-col justify-center px-6 py-16 sm:px-8 lg:px-12">
-        <p className="mb-6 text-sm font-semibold uppercase tracking-[0.35em] text-sky-300">
-          Coming soon
-        </p>
-        <h1 className="max-w-4xl text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
-          Moyer Management
-        </h1>
-        <p className="mt-6 max-w-2xl text-xl leading-8 text-slate-200">
-          A professional home for management systems, operations thinking, and practical consulting
-          resources.
-        </p>
-
-        <div className="mt-10 grid gap-4 sm:grid-cols-3">
-          {upcoming.map((item) => (
-            <div
-              key={item}
-              className="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-2xl shadow-black/20"
-            >
-              <p className="text-sm leading-6 text-slate-200">{item}</p>
-            </div>
-          ))}
+    <main className="wp-migration management">
+      <header className="site-header">
+        <a className="logo" href="#top">
+          <img
+            src="https://moyermanagement.com/wp-content/uploads/2023/12/Moyer-Management-MM-Logo-3D-Black--scaled.jpg"
+            alt="Moyer Management"
+          />
+        </a>
+        <nav>
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button aria-label="Open menu">☰</button>
+      </header>
+      <section id="top" className="hero">
+        <div className="hero-copy">
+          <h1>Moyer Management</h1>
+          <p>Management Solutions For Your Specific Needs.</p>
+          <a className="button" href="#contact">
+            Schedule a Free Consultation
+          </a>
         </div>
-
-        <div className="mt-12 rounded-3xl border border-sky-300/20 bg-sky-300/10 p-6">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-sky-200">Domain</p>
-          <p className="mt-2 text-2xl font-semibold text-white">moyermanagement.com</p>
-          <p className="mt-4 text-sm leading-6 text-slate-300">
-            This starter site was initialized from the Free For Charity single-page template and
-            adapted for the Clarke Moyer portfolio site migration program.
+      </section>
+      <section id="services" className="section two-col">
+        <div>
+          <h2>Specialized Management Consultation</h2>
+          <p>
+            Focused management support for properties, collections, physical investments, and
+            digital assets.
           </p>
         </div>
+        <div className="accordion-list">
+          {' '}
+          <details className="accordion">
+            <summary>Property Management</summary>
+            <p>
+              Property Management support for Moyermanagement clients, migrated from the live
+              WordPress content into a static Next.js experience.
+            </p>
+          </details>
+          <details className="accordion">
+            <summary>Coin Collection Management</summary>
+            <p>
+              Coin Collection Management support for Moyermanagement clients, migrated from the live
+              WordPress content into a static Next.js experience.
+            </p>
+          </details>
+          <details className="accordion">
+            <summary>Physical Investments</summary>
+            <p>
+              Physical Investments support for Moyermanagement clients, migrated from the live
+              WordPress content into a static Next.js experience.
+            </p>
+          </details>
+          <details className="accordion">
+            <summary>Digital Assests</summary>
+            <p>
+              Digital Assests support for Moyermanagement clients, migrated from the live WordPress
+              content into a static Next.js experience.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section id="process" className="section">
+        <h2>Our Process</h2>
+        <div className="mini-grid">
+          {' '}
+          <article className="mini-card">
+            <h3>Identify</h3>
+            <p>
+              Identify is preserved as a visible content area from the original WordPress homepage.
+            </p>
+          </article>
+          <article className="mini-card">
+            <h3>Assess</h3>
+            <p>
+              Assess is preserved as a visible content area from the original WordPress homepage.
+            </p>
+          </article>
+          <article className="mini-card">
+            <h3>Improve</h3>
+            <p>
+              Improve is preserved as a visible content area from the original WordPress homepage.
+            </p>
+          </article>
+          <article className="mini-card">
+            <h3>Repeat</h3>
+            <p>
+              Repeat is preserved as a visible content area from the original WordPress homepage.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section className="blue-band">
+        <div>
+          <h2>Rest Assured, You &amp; Your Company is Covered</h2>
+          <p>
+            Moyer Management brings a practical identify, assess, improve, and repeat cycle to every
+            engagement.
+          </p>
+          <a className="button light" href="#contact">
+            Get Started
+          </a>
+        </div>
+      </section>
+      <section className="section mission">
+        <article>
+          <h3>Mission</h3>
+          <p>
+            Provide specific, practical management solutions for clients who need organized support.
+          </p>
+        </article>
+        <article>
+          <h3>Vision</h3>
+          <p>
+            Help individuals and organizations make confident decisions about their assets and
+            operations.
+          </p>
+        </article>
+        <article>
+          <h3>Values</h3>
+          <p>Clarity, stewardship, trust, and repeatable improvement.</p>
+        </article>
+      </section>
+      <section id="contact" className="contact">
+        <h2>Get Started Today</h2>
+        <h3>Book a Free 30min Consultation</h3>
+        <a className="button" href="mailto:info@moyermanagement.com">
+          Make An Appointment
+        </a>
       </section>
     </main>
   )
