@@ -4,7 +4,7 @@ export default function Home() {
       <header className="site-header">
         <a className="logo" href="#top">
           <img
-            src="https://moyermanagement.com/wp-content/uploads/2023/12/Moyer-Management-MM-Logo-3D-Black--scaled.jpg"
+            src="/wp-content/uploads/2023/12/Moyer-Management-MM-Logo-3D-Black--scaled.jpg"
             alt="Moyer Management"
           />
         </a>
