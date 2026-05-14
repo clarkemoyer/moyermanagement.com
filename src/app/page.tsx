@@ -152,6 +152,9 @@ export default function Home() {
         <a className="button" href="mailto:info@moyermanagement.com">
           Make An Appointment
         </a>
+        <nav className="social-links" aria-label="Social links">
+          <a href="#contact">Facebook</a>
+        </nav>
       </section>
     </main>
   )
