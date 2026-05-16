@@ -46,7 +46,7 @@ export default function Home() {
             <p>
               Welcome to Moyer Management, where we offer specialized management solutions tailored
               to your specific needs. Whether you need assistance with property management, coin
-              collection management,, physical investments, or digital assets we’ve got you covered.
+              collection management, physical investments, or digital assets we’ve got you covered.
               Our dedicated team provides expert advice and guidance to ensure the efficient
               management and maximization of your assets. With our proven process of Identify,
               Assess, Improve, and Repeat, you can trust that you or your company are in capable
@@ -79,7 +79,7 @@ export default function Home() {
               <p>Clear management practices for tangible assets and long-term value protection.</p>
             </details>
             <details className="accordion">
-              <summary>Digital Assests</summary>
+              <summary>Digital Assets</summary>
               <p>Practical organization for digital records, accounts, and online holdings.</p>
             </details>
           </div>
@@ -159,7 +159,7 @@ export default function Home() {
           </article>
           <article>
             <h3>Values</h3>
-            <p>Allways be caught doing the right thing.</p>
+            <p>Always be caught doing the right thing.</p>
           </article>
         </section>
         <section id="contact" className="contact">
