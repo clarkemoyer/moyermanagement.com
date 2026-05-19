@@ -264,6 +264,51 @@ export default function Home() {
             </nav>
           </div>
         </section>
+        <footer className="site-footer">
+          <div className="footer-grid">
+            <div className="footer-brand">
+              <div className="wordmark-link" aria-hidden="true">
+                <span className="logo-mark">MM</span>
+                <span className="logo-text">
+                  <span className="logo-name">Moyer Management</span>
+                  <span className="logo-tag">Specialized Management Solutions</span>
+                </span>
+              </div>
+              <p className="footer-tag">
+                Management built around your assets — property, coin collections, physical
+                investments, and digital holdings.
+              </p>
+            </div>
+            <div className="footer-col">
+              <h4>Explore</h4>
+              <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>Legal</h4>
+              <ul>
+                <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="/terms-of-service/">Terms of Service</a></li>
+                <li><a href="/cookie-policy/">Cookie Policy</a></li>
+                <li><a href="/donation-policy/">Donation Policy</a></li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>Security</h4>
+              <ul>
+                <li><a href="/security-acknowledgements/">Acknowledgements</a></li>
+                <li><a href="/vulnerability-disclosure-policy/">Vulnerability Disclosure</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="footer-bottom">
+            <p>© {new Date().getFullYear()} Moyer Management. All rights reserved.</p>
+            <p>Built with care · Hosted on GitHub Pages</p>
+          </div>
+        </footer>
       </main>
     </>
   )
