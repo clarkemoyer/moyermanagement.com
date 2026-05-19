@@ -212,6 +212,23 @@ button {
 @keyframes mm-fade { from { opacity: 0 } to { opacity: 1 } }
 @keyframes mm-slide { from { transform: translateX(100%) } to { transform: translateX(0) } }
 
+/* ---------- Skip-link (keyboard accessibility) ---------- */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: var(--accent);
+  color: #1a1a1a;
+  padding: 12px 18px;
+  border-radius: 0 0 10px 0;
+  font-weight: 700;
+  text-decoration: none;
+}
+.skip-link:focus {
+  left: 0;
+}
+
 /* ---------- Focus styles (keyboard accessibility) ---------- */
 :focus-visible {
   outline: 2px solid var(--accent);
