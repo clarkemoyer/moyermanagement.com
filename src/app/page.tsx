@@ -188,29 +188,81 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="section mission">
-          <article>
-            <h3>Mission</h3>
-            <p>Reduce Cost — Increase Revenue</p>
-          </article>
-          <article>
-            <h3>Vision</h3>
-            <p>A simple set of management objectives.</p>
-          </article>
-          <article>
-            <h3>Values</h3>
-            <p>Always be caught doing the right thing.</p>
-          </article>
+        <section className="section mission-section">
+          <div className="mission-intro">
+            <span className="section-eyebrow">What we stand for</span>
+            <h2>Mission, Vision &amp; Values</h2>
+          </div>
+          <div className="mission">
+            <article className="mvv-card">
+              <div className="mvv-icon" aria-hidden="true">🎯</div>
+              <h3>Mission</h3>
+              <p className="mvv-headline">Reduce cost. Increase revenue.</p>
+              <p className="mvv-body">
+                A clear management commitment — every engagement starts with the financial outcome
+                you want to see.
+              </p>
+            </article>
+            <article className="mvv-card">
+              <div className="mvv-icon" aria-hidden="true">🧭</div>
+              <h3>Vision</h3>
+              <p className="mvv-headline">A simple set of management objectives.</p>
+              <p className="mvv-body">
+                Strip away complexity. Surface the few decisions that matter most for your assets
+                and your timeline.
+              </p>
+            </article>
+            <article className="mvv-card">
+              <div className="mvv-icon" aria-hidden="true">⚖️</div>
+              <h3>Values</h3>
+              <p className="mvv-headline">Always be caught doing the right thing.</p>
+              <p className="mvv-body">
+                Transparency by default. If we can&apos;t explain a decision in writing, we won&apos;t
+                make it.
+              </p>
+            </article>
+          </div>
         </section>
         <section id="contact" className="contact">
-          <h2>Get Started Today</h2>
-          <h3>Book a Free 30min Consultation</h3>
-          <a className="button" href="mailto:info@moyermanagement.com">
-            Make An Appointment
-          </a>
-          <nav className="social-links" aria-label="Social links">
-            <a href="#contact">Facebook</a>
-          </nav>
+          <div className="contact-inner">
+            <span className="section-eyebrow eyebrow--light">Let&apos;s talk</span>
+            <h2>Get started today</h2>
+            <p className="contact-lead">
+              Book a free 30-minute consultation — no pressure, no obligation, just a clear next
+              step for your assets.
+            </p>
+            <div className="contact-actions">
+              <a className="button button--primary button--lg" href="mailto:info@moyermanagement.com">
+                Make an Appointment
+              </a>
+              <a className="button button--ghost button--lg" href="tel:+15551234567">
+                Or call us
+              </a>
+            </div>
+            <nav className="social-links" aria-label="Social links">
+              <a
+                href="https://www.facebook.com/profile.php?id=61551953495712"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M22 12a10 10 0 1 0-11.6 9.88V14.9H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.77-3.9 1.1 0 2.24.2 2.24.2v2.46H15.2c-1.24 0-1.62.77-1.62 1.56V12h2.77l-.44 2.9h-2.33v6.98A10 10 0 0 0 22 12z"/>
+                </svg>
+                <span>Facebook</span>
+              </a>
+              <a
+                href="mailto:info@moyermanagement.com"
+                aria-label="Email"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2"/>
+                  <path d="m3 7 9 6 9-6"/>
+                </svg>
+                <span>info@moyermanagement.com</span>
+              </a>
+            </nav>
+          </div>
         </section>
       </main>
     </>
