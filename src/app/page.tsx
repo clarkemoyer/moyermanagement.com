@@ -7,14 +7,24 @@ import {
   Compass,
   Scale,
   ArrowRight,
-  PhoneCall,
+  MessageSquare,
   Mail,
   Search,
   ClipboardCheck,
   TrendingUp,
   Repeat,
+  Linkedin,
+  Github,
+  Footprints,
 } from 'lucide-react'
 import { MobileNav } from './mobile-nav'
+
+const BOOKING_URL =
+  'https://outlook.office.com/bookwithme/user/6a2b9209a2654d8e9f83499a2218eec3@moyermanagement.com?anonymous&ismsaljsauthenabled&ep=plink'
+const TEXT_URL = 'sms:5202228104'
+const TEXT_DISPLAY = '(520) 222-8104'
+const LINKEDIN_URL = 'https://www.linkedin.com/in/clarkemoyer'
+const REPO_URL = 'https://github.com/clarkemoyer/moyermanagement.com'
 
 export default function Home() {
   return (
@@ -65,8 +75,14 @@ export default function Home() {
                 a proven Identify → Assess → Improve → Repeat process.
               </p>
               <div className="hero-actions">
-                <a className="button button--primary button--lg" href="#contact">
-                  Schedule a Free Consultation
+                <a
+                  className="button button--primary button--lg"
+                  href={BOOKING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Footprints size={18} strokeWidth={2.5} aria-hidden="true" />
+                  Book a Walk &amp; Talk
                   <ArrowRight size={18} strokeWidth={2.5} aria-hidden="true" />
                 </a>
                 <a className="button button--ghost button--lg" href="#process">
@@ -74,7 +90,7 @@ export default function Home() {
                 </a>
               </div>
               <ul className="hero-trust" aria-label="What's included">
-                <li><span aria-hidden="true">✓</span> Free 30-min consultation</li>
+                <li><span aria-hidden="true">✓</span> Free 30-min walk &amp; talk</li>
                 <li><span aria-hidden="true">✓</span> Transparent, auditable decisions</li>
                 <li><span aria-hidden="true">✓</span> No long-term commitments</li>
               </ul>
@@ -232,8 +248,14 @@ export default function Home() {
                 so your assets stay aligned with your goals.
               </p>
               <div className="hero-actions">
-                <a className="button button--primary button--lg" href="#contact">
-                  Schedule a Free Consultation
+                <a
+                  className="button button--primary button--lg"
+                  href={BOOKING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Footprints size={18} strokeWidth={2.5} aria-hidden="true" />
+                  Book a Walk &amp; Talk
                 </a>
                 <a className="button button--ghost button--lg" href="#services">
                   Explore Services
@@ -293,33 +315,36 @@ export default function Home() {
         </section>
         <section id="contact" className="contact">
           <div className="contact-inner">
-            <span className="section-eyebrow eyebrow--light">Let&apos;s talk</span>
+            <span className="section-eyebrow eyebrow--light">Let&apos;s walk &amp; talk</span>
             <h2>Get started today</h2>
             <p className="contact-lead">
-              Book a free 30-minute consultation — no pressure, no obligation, just a clear next
-              step for your assets.
+              Book a free 30-minute walk &amp; talk — Clarke&apos;s favorite way to connect.
+              Prefer text? That works too. No pressure, no obligation.
             </p>
             <div className="contact-actions">
-              <a className="button button--primary button--lg" href="mailto:info@moyermanagement.com">
-                <Mail size={18} strokeWidth={2.5} aria-hidden="true" />
-                Make an Appointment
-              </a>
-              <a className="button button--ghost button--lg" href="tel:+15551234567">
-                <PhoneCall size={18} strokeWidth={2.5} aria-hidden="true" />
-                Or call us
-              </a>
-            </div>
-            <nav className="social-links" aria-label="Social links">
               <a
-                href="https://www.facebook.com/profile.php?id=61551953495712"
-                aria-label="Facebook"
+                className="button button--primary button--lg"
+                href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M22 12a10 10 0 1 0-11.6 9.88V14.9H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.77-3.9 1.1 0 2.24.2 2.24.2v2.46H15.2c-1.24 0-1.62.77-1.62 1.56V12h2.77l-.44 2.9h-2.33v6.98A10 10 0 0 0 22 12z"/>
-                </svg>
-                <span>Facebook</span>
+                <Footprints size={18} strokeWidth={2.5} aria-hidden="true" />
+                Book a Walk &amp; Talk
+              </a>
+              <a className="button button--ghost button--lg" href={TEXT_URL}>
+                <MessageSquare size={18} strokeWidth={2.5} aria-hidden="true" />
+                Text {TEXT_DISPLAY}
+              </a>
+            </div>
+            <nav className="social-links" aria-label="Other ways to reach us">
+              <a
+                href={LINKEDIN_URL}
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin size={18} strokeWidth={2} aria-hidden="true" />
+                <span>Connect on LinkedIn</span>
               </a>
               <a href="mailto:info@moyermanagement.com" aria-label="Email">
                 <Mail size={18} strokeWidth={2} aria-hidden="true" />
@@ -370,7 +395,23 @@ export default function Home() {
           </div>
           <div className="footer-bottom">
             <p>© {new Date().getFullYear()} Moyer Management. All rights reserved.</p>
-            <p>Built with care · Hosted on GitHub Pages</p>
+            <p className="footer-credit">
+              Hosted by{' '}
+              <a href="https://freeforcharity.org" target="_blank" rel="noopener noreferrer">
+                Free For Charity
+              </a>
+              <span aria-hidden="true"> · </span>
+              <a
+                href={REPO_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View source on GitHub"
+                className="footer-repo-link"
+              >
+                <Github size={14} strokeWidth={2} aria-hidden="true" />
+                <span>Source</span>
+              </a>
+            </p>
           </div>
         </footer>
       </main>

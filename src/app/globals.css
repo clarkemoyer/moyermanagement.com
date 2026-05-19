@@ -666,6 +666,26 @@ button:focus-visible,
 .footer-bottom p {
   margin: 0;
 }
+.footer-credit {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.footer-credit a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.15s;
+}
+.footer-credit a:hover {
+  color: var(--accent);
+}
+.footer-repo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
