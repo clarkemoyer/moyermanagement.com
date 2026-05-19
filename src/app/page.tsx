@@ -43,7 +43,7 @@ export default function Home() {
               <span className="logo-tag">Specialized Management Solutions</span>
             </span>
           </a>
-          <nav>
+          <nav aria-label="Primary">
             <a href="#services">Services</a>
             <a href="#process">Process</a>
             <a href="#contact">Contact</a>
