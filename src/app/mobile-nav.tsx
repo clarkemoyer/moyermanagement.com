@@ -22,7 +22,7 @@ export function MobileNav() {
       <button
         type="button"
         aria-label={open ? 'Close menu' : 'Open menu'}
-        aria-expanded={open}
+        aria-expanded={open ? 'true' : 'false'}
         aria-controls="mobile-menu"
         className="menu-toggle"
         onClick={() => setOpen((v) => !v)}
@@ -45,11 +45,13 @@ export function MobileNav() {
           <a href="#process" onClick={() => setOpen(false)}>Process</a>
           <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
           <a
-            href="#contact"
+            href="https://outlook.office.com/bookwithme/user/6a2b9209a2654d8e9f83499a2218eec3@moyermanagement.com?anonymous&ismsaljsauthenabled&ep=plink"
+            target="_blank"
+            rel="noopener noreferrer"
             className="button button--primary"
             onClick={() => setOpen(false)}
           >
-            Free Consultation
+            Book a Walk &amp; Talk
           </a>
         </div>
       </div>
