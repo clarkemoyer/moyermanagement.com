@@ -1,3 +1,5 @@
+import { MobileNav } from './mobile-nav'
+
 export default function Home() {
   return (
     <>
@@ -33,9 +35,7 @@ export default function Home() {
           <a className="button button--primary nav-cta" href="#contact">
             Free Consultation
           </a>
-          <button type="button" aria-label="Open menu" className="menu-toggle">
-            ☰
-          </button>
+          <MobileNav />
         </header>
         <section id="top" className="hero">
           <div className="hero-copy">

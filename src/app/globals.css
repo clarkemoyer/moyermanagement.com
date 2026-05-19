@@ -129,12 +129,137 @@ button {
 }
 .menu-toggle {
   display: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
   background: var(--surface);
   color: var(--ink);
-  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.menu-toggle-bar {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--ink);
+  border-radius: 1px;
+  transition: background 0.2s;
+}
+.menu-toggle-bar::before,
+.menu-toggle-bar::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 2px;
+  background: var(--ink);
+  border-radius: 1px;
+  transition: transform 0.25s;
+}
+.menu-toggle-bar::before { top: -6px; }
+.menu-toggle-bar::after  { top:  6px; }
+.menu-toggle-bar[data-open='true'] { background: transparent; }
+.menu-toggle-bar[data-open='true']::before { transform: translateY(6px) rotate(45deg); }
+.menu-toggle-bar[data-open='true']::after  { transform: translateY(-6px) rotate(-45deg); }
+
+.mobile-menu {
+  display: none;
+}
+.mobile-menu[data-open='true'] {
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  background: rgba(10, 11, 14, 0.55);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  animation: mm-fade 0.18s ease-out;
+}
+.mobile-menu-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(85vw, 360px);
+  background: #fff;
+  padding: 92px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: -20px 0 60px rgba(0, 0, 0, 0.25);
+  animation: mm-slide 0.22s ease-out;
+}
+.mobile-menu-panel > a {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 14px 4px;
+  border-bottom: 1px solid var(--border);
+  transition: color 0.15s;
+}
+.mobile-menu-panel > a:last-child {
+  border-bottom: 0;
+  margin-top: 16px;
+}
+.mobile-menu-panel > a:hover {
+  color: var(--blue);
+}
+
+@keyframes mm-fade { from { opacity: 0 } to { opacity: 1 } }
+@keyframes mm-slide { from { transform: translateX(100%) } to { transform: translateX(0) } }
+
+/* ---------- Focus styles (keyboard accessibility) ---------- */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+a:focus-visible,
+button:focus-visible,
+.button:focus-visible {
+  outline-offset: 4px;
+}
+
+/* ---------- Scroll-reveal entrance animations ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  .accordion,
+  .process-card,
+  .mvv-card,
+  .stat,
+  .services-intro > *,
+  .process-intro > *,
+  .mission-intro > *,
+  .hero-copy > * {
+    animation: fade-up 0.6s ease-out backwards;
+  }
+  .services-intro > *:nth-child(2) { animation-delay: 0.06s; }
+  .services-intro > *:nth-child(3) { animation-delay: 0.12s; }
+  .services-intro > *:nth-child(4) { animation-delay: 0.18s; }
+  .accordion-list .accordion:nth-child(1) { animation-delay: 0.08s; }
+  .accordion-list .accordion:nth-child(2) { animation-delay: 0.16s; }
+  .accordion-list .accordion:nth-child(3) { animation-delay: 0.24s; }
+  .accordion-list .accordion:nth-child(4) { animation-delay: 0.32s; }
+  .process-grid .process-card:nth-child(1) { animation-delay: 0.05s; }
+  .process-grid .process-card:nth-child(2) { animation-delay: 0.15s; }
+  .process-grid .process-card:nth-child(3) { animation-delay: 0.25s; }
+  .process-grid .process-card:nth-child(4) { animation-delay: 0.35s; }
+  .mission .mvv-card:nth-child(1) { animation-delay: 0.05s; }
+  .mission .mvv-card:nth-child(2) { animation-delay: 0.15s; }
+  .mission .mvv-card:nth-child(3) { animation-delay: 0.25s; }
+  .blue-band-stats .stat:nth-child(1) { animation-delay: 0.05s; }
+  .blue-band-stats .stat:nth-child(2) { animation-delay: 0.15s; }
+  .blue-band-stats .stat:nth-child(3) { animation-delay: 0.25s; }
+  .hero-copy > *:nth-child(2) { animation-delay: 0.08s; }
+  .hero-copy > *:nth-child(3) { animation-delay: 0.16s; }
+  .hero-copy > *:nth-child(4) { animation-delay: 0.24s; }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 .hero {
   min-height: 600px;
