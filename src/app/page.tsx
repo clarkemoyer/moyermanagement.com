@@ -54,24 +54,63 @@ export default function Home() {
           <MobileNav />
         </header>
         <section id="top" className="hero">
-          <div className="hero-copy">
-            <span className="eyebrow">Specialized Management Solutions</span>
-            <h1>
-              Management built around <em>your</em> assets.
-            </h1>
-            <p>
-              Property, coin collections, physical investments, and digital assets — handled with a
-              proven Identify → Assess → Improve → Repeat process.
-            </p>
-            <div className="hero-actions">
-              <a className="button button--primary button--lg" href="#contact">
-                Schedule a Free Consultation
-                <ArrowRight size={18} strokeWidth={2.5} aria-hidden="true" />
-              </a>
-              <a className="button button--ghost button--lg" href="#process">
-                See Our Process
-              </a>
+          <div className="hero-inner">
+            <div className="hero-copy">
+              <span className="eyebrow">Specialized Management Solutions</span>
+              <h1>
+                Management built around <em>your</em> assets.
+              </h1>
+              <p>
+                Property, coin collections, physical investments, and digital assets — handled with
+                a proven Identify → Assess → Improve → Repeat process.
+              </p>
+              <div className="hero-actions">
+                <a className="button button--primary button--lg" href="#contact">
+                  Schedule a Free Consultation
+                  <ArrowRight size={18} strokeWidth={2.5} aria-hidden="true" />
+                </a>
+                <a className="button button--ghost button--lg" href="#process">
+                  See Our Process
+                </a>
+              </div>
+              <ul className="hero-trust" aria-label="What's included">
+                <li><span aria-hidden="true">✓</span> Free 30-min consultation</li>
+                <li><span aria-hidden="true">✓</span> Transparent, auditable decisions</li>
+                <li><span aria-hidden="true">✓</span> No long-term commitments</li>
+              </ul>
             </div>
+            <aside className="hero-visual" aria-hidden="true">
+              <div className="hero-card hero-card--main">
+                <div className="hero-card-row">
+                  <div className="hero-card-pill">Identify</div>
+                  <div className="hero-card-pill">Assess</div>
+                </div>
+                <div className="hero-card-row">
+                  <div className="hero-card-pill">Improve</div>
+                  <div className="hero-card-pill">Repeat</div>
+                </div>
+                <div className="hero-card-meter">
+                  <span className="hero-card-meter-fill" />
+                </div>
+                <div className="hero-card-stats">
+                  <div>
+                    <div className="hero-card-stat-value">+24%</div>
+                    <div className="hero-card-stat-label">Efficiency</div>
+                  </div>
+                  <div>
+                    <div className="hero-card-stat-value">−18%</div>
+                    <div className="hero-card-stat-label">Overhead</div>
+                  </div>
+                </div>
+              </div>
+              <div className="hero-card hero-card--float">
+                <Target size={18} strokeWidth={2.5} />
+                <div>
+                  <div className="hero-card-float-label">On-target</div>
+                  <div className="hero-card-float-value">Quarterly review</div>
+                </div>
+              </div>
+            </aside>
           </div>
         </section>
         <section id="services" className="section services-section">
