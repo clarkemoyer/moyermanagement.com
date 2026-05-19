@@ -66,7 +66,7 @@ const organizationSchema = {
     'Specialized management consulting for property, coin collections, physical investments, and digital assets.',
   contactPoint: {
     '@type': 'ContactPoint',
-    email: 'info@moyermanagement.com',
+    email: 'clarkemoyer@moyermanagement.com',
     contactType: 'Customer Service',
   },
   sameAs: ['https://www.linkedin.com/in/clarkemoyer'],

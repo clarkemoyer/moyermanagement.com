@@ -24,11 +24,11 @@ const ContactSection = () => {
             <MdEmail className="w-[55px] h-[55px] text-[#2680A7] mx-auto mb-4" />
             <p className="font-[600] text-[24px] text-black mb-2">Email</p>
             <a
-              href="mailto:info@moyermanagement.com"
+              href="mailto:clarkemoyer@moyermanagement.com"
               className="font-[600] text-[#2ea3f2] text-[18px] break-all "
               id="lato-font"
             >
-              info@moyermanagement.com
+              clarkemoyer@moyermanagement.com
             </a>
           </div>
 
