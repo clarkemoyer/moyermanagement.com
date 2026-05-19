@@ -33,7 +33,9 @@ export default function Home() {
           <a className="button button--primary nav-cta" href="#contact">
             Free Consultation
           </a>
-          <button aria-label="Open menu" className="menu-toggle">☰</button>
+          <button type="button" aria-label="Open menu" className="menu-toggle">
+            ☰
+          </button>
         </header>
         <section id="top" className="hero">
           <div className="hero-copy">
@@ -55,46 +57,52 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="services" className="section two-col">
-          <div>
-            <h2>Specialized Management Consultation</h2>
-            <p>
-              Welcome to Moyer Management, where we offer specialized management solutions tailored
-              to your specific needs. Whether you need assistance with property management, coin
-              collection management, physical investments, or digital assets we’ve got you covered.
-              Our dedicated team provides expert advice and guidance to ensure the efficient
-              management and maximization of your assets. With our proven process of Identify,
-              Assess, Improve, and Repeat, you can trust that you or your company are in capable
-              hands. Choose Moyer Management for cost reduction, revenue increase, and clear
-              management objectives. Our values center around always doing the right thing, so you
-              can rely on us to make the best decisions for your business. Don’t hesitate, start now
-              with a free consultation. Help for all your management issues is just a click away.
+        <section id="services" className="section services-section">
+          <div className="services-intro">
+            <span className="section-eyebrow">What we do</span>
+            <h2>Specialized management consultation</h2>
+            <p className="lead">
+              Tailored management solutions across four core asset categories — each engagement
+              built around your specific goals, timelines, and risk tolerance.
             </p>
-            <p>
-              At Moyer Management, we specialize in managing a wide range of physical assets,
-              including land, trees, crops, and tangible commodities. With our expertise and
-              dedication, we offer tailored management solutions that are designed to meet your
-              specific needs. Our team of professionals is committed to providing expert advice and
-              guidance, ensuring that your assets are well-managed and maximized for success. Don’t
-              hesitate, get started today by scheduling a free consultation. Help with all your
-              management issues is just a click away.
-            </p>
+            <ul className="checklist">
+              <li>Identify, Assess, Improve, Repeat — our proven four-stage process</li>
+              <li>Cost reduction and revenue growth with clear, measurable objectives</li>
+              <li>Always do the right thing — transparent decisions you can audit</li>
+              <li>Help with land, trees, crops, and tangible commodities included</li>
+            </ul>
           </div>
-          <div className="accordion-list">
-            <details className="accordion">
-              <summary>Property Management</summary>
-              <p>Management support tailored to each owner and asset.</p>
+          <div className="accordion-list" role="list">
+            <details className="accordion" role="listitem">
+              <summary>
+                <span className="accordion-icon" aria-hidden="true">🏠</span>
+                <span className="accordion-title">Property Management</span>
+                <span className="accordion-chev" aria-hidden="true">+</span>
+              </summary>
+              <p>Management support tailored to each owner and asset — leasing, maintenance, and reporting.</p>
             </details>
-            <details className="accordion">
-              <summary>Coin Collection Management</summary>
-              <p>Cataloging, tracking, and stewardship support for coin collections.</p>
+            <details className="accordion" role="listitem">
+              <summary>
+                <span className="accordion-icon" aria-hidden="true">🪙</span>
+                <span className="accordion-title">Coin Collection Management</span>
+                <span className="accordion-chev" aria-hidden="true">+</span>
+              </summary>
+              <p>Cataloging, valuation tracking, and stewardship support for numismatic collections.</p>
             </details>
-            <details className="accordion">
-              <summary>Physical Investments</summary>
+            <details className="accordion" role="listitem">
+              <summary>
+                <span className="accordion-icon" aria-hidden="true">📦</span>
+                <span className="accordion-title">Physical Investments</span>
+                <span className="accordion-chev" aria-hidden="true">+</span>
+              </summary>
               <p>Clear management practices for tangible assets and long-term value protection.</p>
             </details>
-            <details className="accordion">
-              <summary>Digital Assets</summary>
+            <details className="accordion" role="listitem">
+              <summary>
+                <span className="accordion-icon" aria-hidden="true">💾</span>
+                <span className="accordion-title">Digital Assets</span>
+                <span className="accordion-chev" aria-hidden="true">+</span>
+              </summary>
               <p>Practical organization for digital records, accounts, and online holdings.</p>
             </details>
           </div>
