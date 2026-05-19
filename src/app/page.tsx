@@ -58,8 +58,13 @@ export default function Home() {
             <a href="#process">Process</a>
             <a href="#contact">Contact</a>
           </nav>
-          <a className="button button--primary nav-cta" href="#contact">
-            Free Consultation
+          <a
+            className="button button--primary nav-cta"
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Book a Walk &amp; Talk
           </a>
           <MobileNav />
         </header>
