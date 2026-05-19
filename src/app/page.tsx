@@ -151,25 +151,41 @@ export default function Home() {
           </div>
         </section>
         <section className="blue-band">
-          <div>
-            <h2>Rest Assured, You &amp; Your Company is Covered</h2>
-            <p>
-              Reduce Your Organization’s Risk with Moyer Management – Your Trusted Partner. Rest
-              Assured, Your Company is Covered. At Moyer Management, we prioritize the importance of
-              risk mitigation for organizations like yours. Our specialized management solutions are
-              crafted to minimize potential risks and ensure seamless operations. With our proven
-              process of Identify, Assess, Improve, and Repeat, entrusting your assets to our
-              capable hands is a decision you can rely on. Our dedicated team of skilled
-              professionals closely collaborates with you to identify and assess potential risks,
-              empowering you to make informed decisions and proactively safeguard your organization.
-              Choose Moyer Management for peace of mind, cost reduction, revenue growth, and clear
-              management objectives. Your business deserves the best, so schedule a free
-              consultation today and let us guide you through the intricate world of risk
-              management. Help for all your management issues is only a click away.
-            </p>
-            <a className="button light" href="#contact">
-              Get Started
-            </a>
+          <div className="blue-band-inner">
+            <div className="blue-band-copy">
+              <span className="section-eyebrow eyebrow--light">Risk mitigation</span>
+              <h2>
+                Rest assured.<br />
+                Your company is covered.
+              </h2>
+              <p>
+                Reduce organizational risk with a partner you can audit. The same Identify →
+                Assess → Improve → Repeat loop runs in the background — quietly, continuously —
+                so your assets stay aligned with your goals.
+              </p>
+              <div className="hero-actions">
+                <a className="button button--primary button--lg" href="#contact">
+                  Schedule a Free Consultation
+                </a>
+                <a className="button button--ghost button--lg" href="#services">
+                  Explore Services
+                </a>
+              </div>
+            </div>
+            <div className="blue-band-stats">
+              <div className="stat">
+                <div className="stat-value">4</div>
+                <div className="stat-label">Asset categories<br />we manage</div>
+              </div>
+              <div className="stat">
+                <div className="stat-value">100%</div>
+                <div className="stat-label">Transparent<br />engagement</div>
+              </div>
+              <div className="stat">
+                <div className="stat-value">∞</div>
+                <div className="stat-label">Continuous<br />improvement loop</div>
+              </div>
+            </div>
           </div>
         </section>
         <section className="section mission">
