@@ -18,26 +18,41 @@ export default function Home() {
       />
       <main className="wp-migration management">
         <header className="site-header">
-          <a className="logo" href="#top">
-            <img
-              src="/wp-content/uploads/2023/12/Moyer-Management-MM-Logo-3D-Black--scaled.jpg"
-              alt="Moyer Management"
-            />
+          <a className="logo wordmark-link" href="#top" aria-label="Moyer Management — home">
+            <span className="logo-mark" aria-hidden="true">MM</span>
+            <span className="logo-text">
+              <span className="logo-name">Moyer Management</span>
+              <span className="logo-tag">Specialized Management Solutions</span>
+            </span>
           </a>
           <nav>
             <a href="#services">Services</a>
             <a href="#process">Process</a>
             <a href="#contact">Contact</a>
           </nav>
-          <button aria-label="Open menu">☰</button>
+          <a className="button button--primary nav-cta" href="#contact">
+            Free Consultation
+          </a>
+          <button aria-label="Open menu" className="menu-toggle">☰</button>
         </header>
         <section id="top" className="hero">
           <div className="hero-copy">
-            <h1>Moyer Management</h1>
-            <p>Management Solutions For Your Specific Needs.</p>
-            <a className="button" href="#contact">
-              Schedule a Free Consultation
-            </a>
+            <span className="eyebrow">Specialized Management Solutions</span>
+            <h1>
+              Management built around <em>your</em> assets.
+            </h1>
+            <p>
+              Property, coin collections, physical investments, and digital assets — handled with a
+              proven Identify → Assess → Improve → Repeat process.
+            </p>
+            <div className="hero-actions">
+              <a className="button button--primary button--lg" href="#contact">
+                Schedule a Free Consultation
+              </a>
+              <a className="button button--ghost button--lg" href="#process">
+                See Our Process
+              </a>
+            </div>
           </div>
         </section>
         <section id="services" className="section two-col">
