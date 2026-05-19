@@ -107,44 +107,45 @@ export default function Home() {
             </details>
           </div>
         </section>
-        <section id="process" className="section">
-          <h2>Our Process</h2>
-          <div className="mini-grid">
-            <article className="mini-card">
+        <section id="process" className="section process-section">
+          <div className="process-intro">
+            <span className="section-eyebrow">How it works</span>
+            <h2>A proven four-step process</h2>
+            <p className="lead">
+              The same loop runs every engagement — clarity at every step, no surprises.
+            </p>
+          </div>
+          <div className="process-grid">
+            <article className="process-card">
+              <div className="process-number">01</div>
               <h3>Identify</h3>
               <p>
-                Moyer Management – Your reliable ally in asset identification. Discover assets and
-                asset types relevant to your goals with ease and efficiency.
+                Discover the assets — and asset types — that matter to your goals, with a clear
+                inventory you can act on.
               </p>
             </article>
-            <article className="mini-card">
+            <article className="process-card">
+              <div className="process-number">02</div>
               <h3>Assess</h3>
               <p>
-                Assess your current mix of assets and identify any gaps with Moyer Management.
-                Discover the full potential of your assets with our expert guidance and strategic
-                approach. Our team at Moyer Management is here to help you make informed decisions,
-                optimize your resources, and maximize your overall performance. With our specialized
-                expertise, we can ensure that your assets are aligned with your goals, enabling you
-                to stay ahead in today’s dynamic market.
+                Evaluate the current mix, surface gaps, and align assets with your goals so
+                decisions are informed and resources optimized.
               </p>
             </article>
-            <article className="mini-card">
+            <article className="process-card">
+              <div className="process-number">03</div>
               <h3>Improve</h3>
               <p>
-                Based on the assessment, Moyer Management aims to enhance the overall asset holding
-                and ensure a harmonious distribution in line with your goals. Our expertise lies in
-                improving your financial portfolio, optimizing resource allocation, and aligning
-                management percentages to support your specific objectives. Trust us to guide you
-                towards a well-balanced and prosperous future.
+                Rebalance, optimize, and align — sharpening allocation and management to support
+                your specific objectives.
               </p>
             </article>
-            <article className="mini-card">
+            <article className="process-card">
+              <div className="process-number">04</div>
               <h3>Repeat</h3>
               <p>
-                Never cease to enhance your positions and refine your management approach. At Moyer
-                Management, we wholeheartedly believe in the power of continuous learning and
-                constant improvements. We are committed to supporting your journey towards growth
-                and success, prioritizing the development of your skills and leadership abilities.
+                Refine continuously. Learning compounds — and so does the value of a portfolio
+                that's actively managed.
               </p>
             </article>
           </div>
