@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: '%s | Moyer Management',
   },
   description:
-    'Specialized management consulting for property, coin collections, physical investments, and digital assets. Proven Identify → Assess → Improve → Repeat process.',
+    'Specialized management consulting via Walk & Talk sessions. Property, coin collections, physical investments, and digital assets. Proven Identify → Assess → Improve → Repeat process.',
   keywords: [
     'property management',
     'asset management consulting',
@@ -69,7 +69,7 @@ const organizationSchema = {
     email: 'info@moyermanagement.com',
     contactType: 'Customer Service',
   },
-  sameAs: ['https://www.facebook.com/profile.php?id=61551953495712'],
+  sameAs: ['https://www.linkedin.com/in/clarkemoyer'],
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
