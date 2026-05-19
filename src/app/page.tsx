@@ -351,9 +351,9 @@ export default function Home() {
                 <Linkedin size={18} strokeWidth={2} aria-hidden="true" />
                 <span>Connect on LinkedIn</span>
               </a>
-              <a href="mailto:info@moyermanagement.com" aria-label="Email">
+              <a href="mailto:clarkemoyer@moyermanagement.com" aria-label="Email">
                 <Mail size={18} strokeWidth={2} aria-hidden="true" />
-                <span>info@moyermanagement.com</span>
+                <span>clarkemoyer@moyermanagement.com</span>
               </a>
             </nav>
           </div>
@@ -384,17 +384,17 @@ export default function Home() {
             <div className="footer-col">
               <h4>Legal</h4>
               <ul>
-                <li><a href="/privacy-policy/">Privacy Policy</a></li>
-                <li><a href="/terms-of-service/">Terms of Service</a></li>
-                <li><a href="/cookie-policy/">Cookie Policy</a></li>
-                <li><a href="/donation-policy/">Donation Policy</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms-of-service">Terms of Service</a></li>
+                <li><a href="/cookie-policy">Cookie Policy</a></li>
+                <li><a href="/donation-policy">Donation Policy</a></li>
               </ul>
             </div>
             <div className="footer-col">
               <h4>Security</h4>
               <ul>
-                <li><a href="/security-acknowledgements/">Acknowledgements</a></li>
-                <li><a href="/vulnerability-disclosure-policy/">Vulnerability Disclosure</a></li>
+                <li><a href="/security-acknowledgements">Acknowledgements</a></li>
+                <li><a href="/vulnerability-disclosure-policy">Vulnerability Disclosure</a></li>
               </ul>
             </div>
           </div>
