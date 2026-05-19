@@ -1,3 +1,19 @@
+import {
+  Home as HomeIcon,
+  Coins,
+  Package,
+  HardDrive,
+  Target,
+  Compass,
+  Scale,
+  ArrowRight,
+  PhoneCall,
+  Mail,
+  Search,
+  ClipboardCheck,
+  TrendingUp,
+  Repeat,
+} from 'lucide-react'
 import { MobileNav } from './mobile-nav'
 
 export default function Home() {
@@ -50,6 +66,7 @@ export default function Home() {
             <div className="hero-actions">
               <a className="button button--primary button--lg" href="#contact">
                 Schedule a Free Consultation
+                <ArrowRight size={18} strokeWidth={2.5} aria-hidden="true" />
               </a>
               <a className="button button--ghost button--lg" href="#process">
                 See Our Process
@@ -75,7 +92,7 @@ export default function Home() {
           <div className="accordion-list" role="list">
             <details className="accordion" role="listitem">
               <summary>
-                <span className="accordion-icon" aria-hidden="true">🏠</span>
+                <span className="accordion-icon" aria-hidden="true"><HomeIcon size={20} strokeWidth={2} /></span>
                 <span className="accordion-title">Property Management</span>
                 <span className="accordion-chev" aria-hidden="true">+</span>
               </summary>
@@ -83,7 +100,7 @@ export default function Home() {
             </details>
             <details className="accordion" role="listitem">
               <summary>
-                <span className="accordion-icon" aria-hidden="true">🪙</span>
+                <span className="accordion-icon" aria-hidden="true"><Coins size={20} strokeWidth={2} /></span>
                 <span className="accordion-title">Coin Collection Management</span>
                 <span className="accordion-chev" aria-hidden="true">+</span>
               </summary>
@@ -91,7 +108,7 @@ export default function Home() {
             </details>
             <details className="accordion" role="listitem">
               <summary>
-                <span className="accordion-icon" aria-hidden="true">📦</span>
+                <span className="accordion-icon" aria-hidden="true"><Package size={20} strokeWidth={2} /></span>
                 <span className="accordion-title">Physical Investments</span>
                 <span className="accordion-chev" aria-hidden="true">+</span>
               </summary>
@@ -99,7 +116,7 @@ export default function Home() {
             </details>
             <details className="accordion" role="listitem">
               <summary>
-                <span className="accordion-icon" aria-hidden="true">💾</span>
+                <span className="accordion-icon" aria-hidden="true"><HardDrive size={20} strokeWidth={2} /></span>
                 <span className="accordion-title">Digital Assets</span>
                 <span className="accordion-chev" aria-hidden="true">+</span>
               </summary>
@@ -117,7 +134,10 @@ export default function Home() {
           </div>
           <div className="process-grid">
             <article className="process-card">
-              <div className="process-number">01</div>
+              <div className="process-number" aria-hidden="true">
+                <Search size={22} strokeWidth={2} />
+                <span className="process-step">01</span>
+              </div>
               <h3>Identify</h3>
               <p>
                 Discover the assets — and asset types — that matter to your goals, with a clear
@@ -125,7 +145,10 @@ export default function Home() {
               </p>
             </article>
             <article className="process-card">
-              <div className="process-number">02</div>
+              <div className="process-number" aria-hidden="true">
+                <ClipboardCheck size={22} strokeWidth={2} />
+                <span className="process-step">02</span>
+              </div>
               <h3>Assess</h3>
               <p>
                 Evaluate the current mix, surface gaps, and align assets with your goals so
@@ -133,7 +156,10 @@ export default function Home() {
               </p>
             </article>
             <article className="process-card">
-              <div className="process-number">03</div>
+              <div className="process-number" aria-hidden="true">
+                <TrendingUp size={22} strokeWidth={2} />
+                <span className="process-step">03</span>
+              </div>
               <h3>Improve</h3>
               <p>
                 Rebalance, optimize, and align — sharpening allocation and management to support
@@ -141,11 +167,14 @@ export default function Home() {
               </p>
             </article>
             <article className="process-card">
-              <div className="process-number">04</div>
+              <div className="process-number" aria-hidden="true">
+                <Repeat size={22} strokeWidth={2} />
+                <span className="process-step">04</span>
+              </div>
               <h3>Repeat</h3>
               <p>
                 Refine continuously. Learning compounds — and so does the value of a portfolio
-                that's actively managed.
+                that&apos;s actively managed.
               </p>
             </article>
           </div>
@@ -195,7 +224,7 @@ export default function Home() {
           </div>
           <div className="mission">
             <article className="mvv-card">
-              <div className="mvv-icon" aria-hidden="true">🎯</div>
+              <div className="mvv-icon" aria-hidden="true"><Target size={26} strokeWidth={2} /></div>
               <h3>Mission</h3>
               <p className="mvv-headline">Reduce cost. Increase revenue.</p>
               <p className="mvv-body">
@@ -204,7 +233,7 @@ export default function Home() {
               </p>
             </article>
             <article className="mvv-card">
-              <div className="mvv-icon" aria-hidden="true">🧭</div>
+              <div className="mvv-icon" aria-hidden="true"><Compass size={26} strokeWidth={2} /></div>
               <h3>Vision</h3>
               <p className="mvv-headline">A simple set of management objectives.</p>
               <p className="mvv-body">
@@ -213,7 +242,7 @@ export default function Home() {
               </p>
             </article>
             <article className="mvv-card">
-              <div className="mvv-icon" aria-hidden="true">⚖️</div>
+              <div className="mvv-icon" aria-hidden="true"><Scale size={26} strokeWidth={2} /></div>
               <h3>Values</h3>
               <p className="mvv-headline">Always be caught doing the right thing.</p>
               <p className="mvv-body">
@@ -233,9 +262,11 @@ export default function Home() {
             </p>
             <div className="contact-actions">
               <a className="button button--primary button--lg" href="mailto:info@moyermanagement.com">
+                <Mail size={18} strokeWidth={2.5} aria-hidden="true" />
                 Make an Appointment
               </a>
               <a className="button button--ghost button--lg" href="tel:+15551234567">
+                <PhoneCall size={18} strokeWidth={2.5} aria-hidden="true" />
                 Or call us
               </a>
             </div>
@@ -251,14 +282,8 @@ export default function Home() {
                 </svg>
                 <span>Facebook</span>
               </a>
-              <a
-                href="mailto:info@moyermanagement.com"
-                aria-label="Email"
-              >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <rect x="3" y="5" width="18" height="14" rx="2"/>
-                  <path d="m3 7 9 6 9-6"/>
-                </svg>
+              <a href="mailto:info@moyermanagement.com" aria-label="Email">
+                <Mail size={18} strokeWidth={2} aria-hidden="true" />
                 <span>info@moyermanagement.com</span>
               </a>
             </nav>
